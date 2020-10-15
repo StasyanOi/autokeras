@@ -10,7 +10,7 @@ if __name__ == '__main__':
     print(y_train[:3])  # array([7, 2, 1], dtype=uint8)
 
     # Initialize the ImageClassifier.
-    clf = ak.ImageClassifier(max_trials=3)
+    clf = ak.ImageClassifier(max_trials=1, overwrite=True)
     # Search for the best model.
     clf.fit(x_train, y_train, epochs=10)
     # Evaluate on the testing data.

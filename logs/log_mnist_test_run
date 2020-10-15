@@ -1,0 +1,88 @@
+2020-10-15 12:11:10.536984: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-10-15 12:11:10.537064: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+(60000, 28, 28)
+(60000,)
+[5 0 4]
+2020-10-15 12:11:14.547937: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-10-15 12:11:14.547962: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2020-10-15 12:11:14.547977: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (stanislav-Lenovo-IdeaPad-S340-14IWL): /proc/driver/nvidia/version does not exist
+2020-10-15 12:11:14.548222: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-10-15 12:11:14.581252: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1800000000 Hz
+2020-10-15 12:11:14.582172: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x59f95d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-15 12:11:14.582221: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+
+Search: Running Trial #1
+
+Hyperparameter    |Value             |Best Value So Far
+image_block_1/b...|vanilla           |?
+image_block_1/n...|True              |?
+image_block_1/a...|False             |?
+image_block_1/c...|3                 |?
+image_block_1/c...|1                 |?
+image_block_1/c...|2                 |?
+image_block_1/c...|True              |?
+image_block_1/c...|False             |?
+image_block_1/c...|0.25              |?
+image_block_1/c...|32                |?
+image_block_1/c...|64                |?
+classification_...|flatten           |?
+classification_...|0.5               |?
+optimizer         |adam              |?
+learning_rate     |0.001             |?
+
+Epoch 1/10
+1500/1500 [==============================] - 40s 27ms/step - loss: 0.1746 - accuracy: 0.9463 - val_loss: 0.0774 - val_accuracy: 0.9759
+Epoch 2/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0778 - accuracy: 0.9763 - val_loss: 0.0520 - val_accuracy: 0.9848
+Epoch 3/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0628 - accuracy: 0.9805 - val_loss: 0.0481 - val_accuracy: 0.9853
+Epoch 4/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0549 - accuracy: 0.9820 - val_loss: 0.0433 - val_accuracy: 0.9878
+Epoch 5/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0488 - accuracy: 0.9845 - val_loss: 0.0430 - val_accuracy: 0.9877
+Epoch 6/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0439 - accuracy: 0.9858 - val_loss: 0.0425 - val_accuracy: 0.9875
+Epoch 7/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0399 - accuracy: 0.9868 - val_loss: 0.0414 - val_accuracy: 0.9887
+Epoch 8/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0365 - accuracy: 0.9880 - val_loss: 0.0460 - val_accuracy: 0.9863
+Epoch 9/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0329 - accuracy: 0.9891 - val_loss: 0.0429 - val_accuracy: 0.9882
+Epoch 10/10
+1500/1500 [==============================] - 43s 29ms/step - loss: 0.0297 - accuracy: 0.9902 - val_loss: 0.0403 - val_accuracy: 0.9890
+
+Trial 1 Complete [00h 07m 08s]
+val_loss: 0.04028612747788429
+
+Best val_loss So Far: 0.04028612747788429
+Total elapsed time: 00h 07m 08s
+Epoch 1/10
+1875/1875 [==============================] - 51s 27ms/step - loss: 0.1634 - accuracy: 0.9505
+Epoch 2/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0749 - accuracy: 0.9768
+Epoch 3/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0581 - accuracy: 0.9824
+Epoch 4/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0513 - accuracy: 0.9836
+Epoch 5/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0450 - accuracy: 0.9851
+Epoch 6/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0411 - accuracy: 0.9870
+Epoch 7/10
+1875/1875 [==============================] - 51s 27ms/step - loss: 0.0365 - accuracy: 0.9885
+Epoch 8/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0323 - accuracy: 0.9892
+Epoch 9/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0332 - accuracy: 0.9894
+Epoch 10/10
+1875/1875 [==============================] - 50s 27ms/step - loss: 0.0302 - accuracy: 0.9908
+WARNING:tensorflow:From /home/stanislav/PycharmProjects/autokeras/venv/lib/python3.6/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2020-10-15 12:26:54.060769: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /home/stanislav/PycharmProjects/autokeras/venv/lib/python3.6/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+313/313 [==============================] - 2s 6ms/step - loss: 0.0293 - accuracy: 0.9910
+Accuracy: [0.029278766363859177, 0.9909999966621399]
